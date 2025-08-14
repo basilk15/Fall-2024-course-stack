@@ -1,0 +1,8 @@
+<RCC>
+  <qresource prefix="newPrefix">
+    <file>1600w-bO8TgMWVszg.webp</file>
+  </qresource>
+  <qresource prefix="newPrefix">
+    <file>images.png</file>
+  </qresource>
+</RCC>

@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>BookAppointmentWindow</class>
+ <widget class="QMainWindow" name="BookAppointmentWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>733</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Add Patient</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="header">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>800</width>
+      <height>80</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string>
+      font-size: 24px; 
+      font-weight: bold; 
+      color: white; 
+      background: qlineargradient(x1: 0, y1: 0, x2: 1, y2: 0, stop: 0 #6A89CC, stop: 1 #4A69BD);
+     </string>
+    </property>
+    <property name="text">
+     <string>Patient Information</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="labelPatientName">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>120</y>
+      <width>200</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string>font-size: 14px; color: #34495E;</string>
+    </property>
+    <property name="text">
+     <string>Patient Name:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="labelDoctorName">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>180</y>
+      <width>200</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string>font-size: 14px; color: #34495E;</string>
+    </property>
+    <property name="text">
+     <string>Age:</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnBook">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>510</y>
+      <width>150</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string>
+      QPushButton { 
+       background-color: #2ECC71; 
+       color: white; 
+       border-radius: 20px; 
+       font-size: 14px;
+      }
+      QPushButton:hover { background-color: #27AE60; }
+     </string>
+    </property>
+    <property name="text">
+     <string>Add Patient</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnCancel">
+    <property name="geometry">
+     <rect>
+      <x>410</x>
+      <y>510</y>
+      <width>150</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string>
+      QPushButton { 
+       background-color: #E74C3C; 
+       color: white; 
+       border-radius: 20px; 
+       font-size: 14px;
+      }
+      QPushButton:hover { background-color: #C0392B; }
+     </string>
+    </property>
+    <property name="text">
+     <string>Cancel</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="age_input">
+    <property name="geometry">
+     <rect>
+      <x>210</x>
+      <y>120</y>
+      <width>200</width>
+      <height>30</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="address_input">
+    <property name="geometry">
+     <rect>
+      <x>210</x>
+      <y>180</y>
+      <width>200</width>
+      <height>30</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="phone_input">
+    <property name="geometry">
+     <rect>
+      <x>210</x>
+      <y>230</y>
+      <width>200</width>
+      <height>30</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="email_input">
+    <property name="geometry">
+     <rect>
+      <x>210</x>
+      <y>280</y>
+      <width>200</width>
+      <height>30</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QDateEdit" name="admission_date_input">
+    <property name="geometry">
+     <rect>
+      <x>210</x>
+      <y>430</y>
+      <width>200</width>
+      <height>30</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="labelPatientName_2">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>430</y>
+      <width>200</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string>font-size: 14px; color: #34495E;</string>
+    </property>
+    <property name="text">
+     <string>Admission Date:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="labelDoctorName_2">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>230</y>
+      <width>200</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string>font-size: 14px; color: #34495E;</string>
+    </property>
+    <property name="text">
+     <string>Gender:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="labelDoctorName_3">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>280</y>
+      <width>200</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string>font-size: 14px; color: #34495E;</string>
+    </property>
+    <property name="text">
+     <string>Address:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="labelDoctorName_4">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>330</y>
+      <width>200</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string>font-size: 14px; color: #34495E;</string>
+    </property>
+    <property name="text">
+     <string>Phone:</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="email_input_2">
+    <property name="geometry">
+     <rect>
+      <x>210</x>
+      <y>330</y>
+      <width>200</width>
+      <height>30</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="labelDoctorName_5">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>380</y>
+      <width>200</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string>font-size: 14px; color: #34495E;</string>
+    </property>
+    <property name="text">
+     <string>Email:</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="age_input_2">
+    <property name="geometry">
+     <rect>
+      <x>210</x>
+      <y>380</y>
+      <width>200</width>
+      <height>30</height>
+     </rect>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
